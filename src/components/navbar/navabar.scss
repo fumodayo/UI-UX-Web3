@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .gpt3__navbar {
   display: flex;
   justify-content: space-between;
@@ -95,7 +97,7 @@
     cursor: pointer;
   }
 
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: $width-desktop) {
     &-links_container {
       display: none;
     }
@@ -105,13 +107,13 @@
     }
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: $width-tablet) {
     & {
       padding: 2rem 4rem;
     }
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: $width-mobile) {
     & {
       padding: 2rem;
 
